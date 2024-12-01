@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.java_fx_szoftverleltar.MainController">
+    <!-- Menü -->
+    <MenuBar>
+        <Menu text="Adatbázis">
+            <MenuItem text="Olvas" onAction="#showGepek"/>
+            <MenuItem text="Olvas2" onAction="#showSzures"/>
+            <MenuItem text="Új rekord" onAction="#showIr"/>
+            <MenuItem text="Módosítás" onAction="#showModosit"/>
+            <MenuItem text="Törlés" onAction="#showDelete"/>
+        </Menu>
+        <Menu text="SOAP Kliens">
+            <MenuItem text="Teljes Letöltés" onAction="#handleDownloadAll"/>
+            <MenuItem text="Szűrt Letöltés/Grafikon" onAction="#handleFilteredGraph"/>
+
+        </Menu>
+
+        <Menu text="Gombok">
+            <MenuItem text="gomb" onAction="#showGomb"/>
+        </Menu>
+    </MenuBar>
+
+    <!-- Tartalom -->
+    <VBox fx:id="mainContent">
+        <Label text="Főmenü" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <VBox fx:id="soapClientContainer" visible="false" managed="false">
+        <!-- A SOAP kliens UI elemei itt jelennek meg programozottan -->
+    </VBox>
+</VBox>

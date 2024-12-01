@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" >
+    <children>
+        <Label text="SOAP Kliens" style="-fx-font-size: 18px;"/>
+        <Button text="Letöltés" />
+        <Button text="Letöltés2" />
+        <LineChart fx:id="lineChart" title="Adatok Grafikonja">
+            <xAxis>
+                <CategoryAxis label="Dátum"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Érték"/>
+            </yAxis>
+        </LineChart>
+    </children>
+</VBox>

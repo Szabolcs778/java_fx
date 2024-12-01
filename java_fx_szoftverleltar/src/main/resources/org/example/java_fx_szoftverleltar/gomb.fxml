@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.java_fx_szoftverleltar.GombController">
+    <Button text="Start Task" onAction="#startTask"/>
+    <Label fx:id="label1" text="Label 1"/>
+    <Label fx:id="label2" text="Label 2"/>
+</VBox>
