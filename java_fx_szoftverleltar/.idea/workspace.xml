@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="java_fx_szoftverleltar:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f247b59-a386-49f6-ad38-6ef0e365e1ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/java_fx_szoftverleltar_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/java_fx_szoftverleltar/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/example/java_fx_szoftverleltar/hello-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +34,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2pcTZoUJCmwZ76pO3VPFpJBgFyU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,11 +44,32 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.JAVfx.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Maven.osszesito [clean].executor": "Run",
+    "Maven.osszesito [compile].executor": "Run",
+    "Maven.osszesito [install].executor": "Run",
+    "Maven.osszesito [org.apache.cxf:cxf-codegen-plugin:3.5.5:wsdl2java].executor": "Run",
+    "Maven.osszesito [org.apache.cxf:cxf-codegen-plugin:3.6.3:wsdl2java].executor": "Run",
+    "Maven.osszesito [org.apache.cxf:cxf-codegen-plugin:4.0.5:wsdl2java].executor": "Run",
+    "Maven.osszesito [org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile].executor": "Run",
+    "Maven.osszesito [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
+    "Maven.osszesito [package].executor": "Run",
+    "Maven.osszesito [test].executor": "Run",
+    "Maven.osszesito [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "fx",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733064422156</updated>
       <workItem from="1733064423093" duration="246000" />
+      <workItem from="1733064733153" duration="9299000" />
     </task>
     <servers />
   </component>

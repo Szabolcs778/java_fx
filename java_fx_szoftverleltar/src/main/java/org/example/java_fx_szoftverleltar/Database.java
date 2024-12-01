@@ -7,21 +7,17 @@ import java.sql.SQLException;
 public class Database {
     private static final String URL = "jdbc:sqlite:C:/adatok/adatok.db";
 
+    /**
+     * Establishes a connection to the SQLite database.
+     *
+     * @return A Connection object if successful, or null if an error occurs.
+     */
     public static Connection connect() {
         try {
             return DriverManager.getConnection(URL);
         } catch (SQLException e) {
-            System.out.println("Kapcsolódási hiba: " + e.getMessage());
+            System.err.println("Kapcsolódási hiba: " + e.getMessage());
             return null;
         }
     }
-    public static void main(String[] args) {
-        Connection conn = Database.connect();
-        if (conn != null) {
-            System.out.println("Kapcsolódás sikeres!");
-        } else {
-            System.out.println("Kapcsolódási hiba!");
-        }
-    }
-
 }

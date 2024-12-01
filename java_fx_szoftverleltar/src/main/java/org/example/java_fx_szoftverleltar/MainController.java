@@ -19,7 +19,7 @@ public class MainController {
     @FXML
     public void showGepek() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/gep.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/gep.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Gépek");
@@ -33,7 +33,7 @@ public class MainController {
     @FXML
     public void showSzures() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/szures.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/szures.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Szűrés");
@@ -47,7 +47,7 @@ public class MainController {
     @FXML
     public void showIr() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/ir.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/ir.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Új Rekord Írása");
@@ -61,7 +61,7 @@ public class MainController {
     @FXML
     public void showModosit() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/modosit.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/modosit.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Rekord Módosítása");
@@ -75,7 +75,7 @@ public class MainController {
     @FXML
     public void showDelete() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/delete.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/delete.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Rekord Törlése");
@@ -89,7 +89,7 @@ public class MainController {
     @FXML
     public void showGomb() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/osszesito/gomb.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/example/java_fx_szoftverleltar/gomb.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = new Stage();
             stage.setTitle("Gombok");

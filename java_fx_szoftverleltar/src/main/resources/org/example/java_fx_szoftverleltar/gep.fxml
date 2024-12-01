@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+      fx:controller="org.example.java_fx_szoftverleltar.GepekController" spacing="10">
+    <Label text="Telepítések listája" style="-fx-font-size: 18px;"/>
+    <TableView fx:id="telepitesTable">
+        <columns>
+
+            <TableColumn fx:id="gepHelyColumn" text="Hely"/>
+            <TableColumn fx:id="gepTipusColumn" text="Típus"/>
+            <TableColumn fx:id="gepIpcimColumn" text="IP cím"/>
+
+            <TableColumn fx:id="szoftverNevColumn" text="Szoftver Név"/>
+            <TableColumn fx:id="szoftverKategoriaColumn" text="Kategória"/>
+            <TableColumn fx:id="telepitesVerzioColumn" text="Verzió"/>
+            <TableColumn fx:id="telepitesDatumColumn" text="Dátum"/>
+        </columns>
+    </TableView>
+    <Button text="Frissítés" onAction="#loadTelepites"/>
+</VBox>

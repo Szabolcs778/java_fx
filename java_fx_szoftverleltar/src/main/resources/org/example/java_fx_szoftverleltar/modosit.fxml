@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+      fx:controller="org.example.java_fx_szoftverleltar.ModositController" spacing="15" alignment="TOP_CENTER">
+    <Label text="Rekord módosítása" style="-fx-font-size: 18px;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <!-- Táblázat kiválasztása -->
+        <Label text="Táblázat kiválasztása:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <ComboBox fx:id="tableSelect" promptText="Válassz táblát" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <!-- Azonosító kiválasztása -->
+        <Label text="Rekord ID:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="idSelect" promptText="Válassz azonosítót" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    </GridPane>
+
+    <!-- Dinamikusan megjelenő mezők -->
+    <VBox fx:id="dynamicFields" spacing="10"/>
+
+    <!-- Módosítás gomb -->
+    <Button text="Rekord módosítása" onAction="#handleUpdate"/>
+</VBox>
