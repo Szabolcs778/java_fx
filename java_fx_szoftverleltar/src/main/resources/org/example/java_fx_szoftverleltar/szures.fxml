@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx"
+      fx:controller="org.example.java_fx_szoftverleltar.SzuresController" spacing="15" alignment="TOP_CENTER">
+    <Label text="Telepítések szűrése" style="-fx-font-size: 18px;"/>
+
+    <!-- Szűrési űrlap -->
+    <GridPane hgap="10" vgap="10">
+        <!-- Sor: Hely -->
+        <Label text="Hely:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="helyInput" promptText="Hely" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <!-- Sor: Típus -->
+        <Label text="Típus:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="tipusInput" promptText="Típus" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Mind"/>
+                    <String fx:value="asztali"/>
+                    <String fx:value="notebook"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <!-- Sor: IP cím -->
+        <Label text="IP cím:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="ipcimInput" promptText="IP cím" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <!-- Sor: Dátum -->
+        <Label text="Dátum:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+
+        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <RadioButton fx:id="datumVan" text="Van"/>
+            <RadioButton fx:id="datumNincs" text="Nincs"/>
+        </HBox>
+
+
+        <!-- Sor: Szoftver szűrés -->
+        <Label text="Szoftver:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <ComboBox fx:id="szoftverInput" promptText="Szoftver" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    </GridPane>
+
+    <!-- Szűrés gomb -->
+    <Button text="Szűrés" onAction="#handleSzures"/>
+
+    <!-- Táblázat az eredmények megjelenítéséhez -->
+    <TableView fx:id="telepitesTable" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="gepIdColumn" text="Gép ID"/>
+            <TableColumn fx:id="gepHelyColumn" text="Hely"/>
+            <TableColumn fx:id="gepTipusColumn" text="Típus"/>
+            <TableColumn fx:id="gepIpcimColumn" text="IP cím"/>
+            <TableColumn fx:id="szoftverIdColumn" text="Szoftver ID"/>
+            <TableColumn fx:id="szoftverNevColumn" text="Szoftver Név"/>
+            <TableColumn fx:id="szoftverKategoriaColumn" text="Kategória"/>
+            <TableColumn fx:id="telepitesVerzioColumn" text="Verzió"/>
+            <TableColumn fx:id="telepitesDatumColumn" text="Dátum"/>
+        </columns>
+    </TableView>
+</VBox>
